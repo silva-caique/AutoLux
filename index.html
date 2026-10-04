@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="pt-PT" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AutoLux — Website demonstrativo de automóveis premium. Catálogo fictício com design moderno, dark mode e interações reais.">
+  <title>AutoLux | Automóveis Premium</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" role="banner">
+    <div class="container header-inner">
+      <a href="#inicio" class="logo" aria-label="AutoLux - Página inicial">
+        <span class="logo-icon" aria-hidden="true"></span>
+        AutoLux
+      </a>
+
+      <nav class="nav" id="nav" role="navigation" aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a href="#inicio" class="nav-link">Início</a></li>
+          <li><a href="#automoveis" class="nav-link">Automóveis</a></li>
+          <li><a href="#servicos" class="nav-link">Serviços</a></li>
+          <li><a href="#sobre" class="nav-link">Sobre Nós</a></li>
+          <li><a href="#contactos" class="nav-link">Contactos</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Mudar para modo claro" type="button">
+          <!-- Ícone Lua (modo escuro ativo) -->
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+          <!-- Ícone Sol (modo claro ativo) -->
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+        </button>
+        <a href="#automoveis" class="btn btn-primary btn-sm">Explorar automóveis</a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false" type="button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="inicio">
+      <div class="hero-bg">
+        <!-- 🖼️ IMAGEM PRINCIPAL DA HERO: altera o caminho no atributo src abaixo. -->
+        <img src="assets/images/hero/hero-car.jpg" alt="Automóvel premium AutoLux em destaque">
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <span class="hero-badge">Seleção Premium</span>
+          <h1 class="hero-title">A excelência encontra o seu caminho.</h1>
+          <p class="hero-text">
+            Descubra uma coleção cuidadosamente selecionada de automóveis premium, desportivos e de luxo. Experiência AutoLux — elegância, desempenho e confiança.
+          </p>
+          <div class="hero-buttons">
+            <a href="#automoveis" class="btn btn-primary">Explorar automóveis</a>
+            <a href="#sobre" class="btn btn-secondary">Conhecer a AutoLux</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <p class="hero-stat-value">8+</p>
+              <p class="hero-stat-label">Modelos em destaque</p>
+            </div>
+            <div class="hero-stat">
+              <p class="hero-stat-value">100%</p>
+              <p class="hero-stat-label">Demonstração interativa</p>
+            </div>
+            <div class="hero-stat">
+              <p class="hero-stat-value">Premium</p>
+              <p class="hero-stat-label">Design e experiência</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ESTATÍSTICAS ========== -->
+    <section class="stats section">
+      <div class="container">
+        <div class="stats-grid reveal">
+          <div class="stat-item">
+            <p class="stat-number" data-target="8" data-suffix="+">0</p>
+            <p class="stat-label">Automóveis no catálogo</p>
+          </div>
+          <div class="stat-item">
+            <p class="stat-number" data-target="5" data-suffix="">0</p>
+            <p class="stat-label">Categorias diferentes</p>
+          </div>
+          <div class="stat-item">
+            <p class="stat-number" data-target="100" data-suffix="%">0</p>
+            <p class="stat-label">Dados demonstrativos</p>
+          </div>
+          <div class="stat-item">
+            <p class="stat-number" data-target="2" data-suffix="">0</p>
+            <p class="stat-label">Temas (claro / escuro)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== AUTOMÓVEIS EM DESTAQUE ========== -->
+    <section class="cars-section section" id="automoveis">
+      <div class="container">
+        <h2 class="section-title reveal">A nossa seleção</h2>
+        <p class="section-subtitle reveal">
+          Explore o catálogo de demonstração AutoLux. Todos os automóveis, preços e dados são fictícios e servem apenas para ilustrar o funcionamento do website.
+        </p>
+
+        <!-- Filtros -->
+        <div class="filters reveal">
+          <div class="filter-group">
+            <label for="search-input">Pesquisar</label>
+            <input type="search" id="search-input" placeholder="Nome do modelo..." aria-label="Pesquisar por nome">
+          </div>
+          <div class="filter-group">
+            <label for="filter-category">Categoria</label>
+            <select id="filter-category" aria-label="Filtrar por categoria">
+              <option value="">Todas</option>
+              <option value="Desportivo">Desportivo</option>
+              <option value="Coupé">Coupé</option>
+              <option value="SUV Premium">SUV Premium</option>
+              <option value="Berlina de Luxo">Berlina de Luxo</option>
+              <option value="Elétrico">Elétrico</option>
+              <option value="Desportivo Alto Desempenho">Alto Desempenho</option>
+              <option value="Cabrio">Cabrio</option>
+              <option value="Executivo">Executivo</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="filter-fuel">Motorização</label>
+            <select id="filter-fuel" aria-label="Filtrar por motorização">
+              <option value="">Todas</option>
+              <option value="Gasolina">Gasolina</option>
+              <option value="Diesel">Diesel</option>
+              <option value="Híbrido">Híbrido</option>
+              <option value="Elétrico">Elétrico</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label>Preço (€)</label>
+            <div class="price-range">
+              <input type="number" id="price-min" placeholder="Mín" min="0" aria-label="Preço mínimo">
+              <input type="number" id="price-max" placeholder="Máx" min="0" aria-label="Preço máximo">
+            </div>
+          </div>
+          <div class="filter-group">
+            <label for="sort-select">Ordenar</label>
+            <select id="sort-select" aria-label="Ordenar resultados">
+              <option value="default">Padrão</option>
+              <option value="price-asc">Preço: menor → maior</option>
+              <option value="price-desc">Preço: maior → menor</option>
+              <option value="newest">Mais recentes</option>
+            </select>
+          </div>
+          <div class="filter-actions">
+            <label style="display:flex;align-items:center;gap:0.4rem;font-size:0.9rem;cursor:pointer;">
+              <input type="checkbox" id="show-favorites"> Só favoritos
+            </label>
+            <span class="favorites-count" style="display:none;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              <span id="favorites-count">0</span>
+            </span>
+            <button class="btn btn-secondary btn-sm" id="clear-filters" type="button">Limpar</button>
+          </div>
+        </div>
+
+        <!-- Grelha de cartões -->
+        <div class="cars-grid" id="cars-grid" role="list">
+          <!-- Preenchido por JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SERVIÇOS ========== -->
+    <section class="services section" id="servicos">
+      <div class="container">
+        <h2 class="section-title reveal">Os nossos serviços</h2>
+        <p class="section-subtitle reveal">
+          Exemplos de serviços que uma marca premium poderia oferecer. Todos os textos são demonstrativos.
+        </p>
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3 class="service-title">Seleção Premium</h3>
+            <p class="service-desc">Curadoria cuidadosa de automóveis de gama alta, com atenção a cada detalhe de qualidade e procedência.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+            </div>
+            <h3 class="service-title">Apoio na escolha</h3>
+            <p class="service-desc">Orientação personalizada para encontrar o automóvel que melhor se adapta ao seu estilo de vida e preferências.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <h3 class="service-title">Avaliação de retomas</h3>
+            <p class="service-desc">Processo transparente de avaliação do seu automóvel atual, apresentado como exemplo demonstrativo.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            </div>
+            <h3 class="service-title">Preparação da compra</h3>
+            <p class="service-desc">Acompanhamento em todas as etapas, desde a escolha até à documentação — ilustração de serviço.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <h3 class="service-title">Agendar visita</h3>
+            <p class="service-desc">Possibilidade de marcar uma visita para conhecer os automóveis de perto. Funcionalidade demonstrativa.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+            </div>
+            <h3 class="service-title">Soluções de financiamento</h3>
+            <p class="service-desc">Informação genérica sobre opções de financiamento. Não constitui proposta comercial real nem aprovação de crédito.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SOBRE NÓS ========== -->
+    <section class="about section" id="sobre">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image reveal">
+            <!-- 🖼️ IMAGEM DA SECÇÃO SOBRE: altera o caminho no atributo src abaixo. -->
+            <img src="assets/images/about/about-car.jpg" alt="Ambiente premium AutoLux">
+          </div>
+          <div class="about-content reveal">
+            <h2 class="section-title">Sobre a AutoLux</h2>
+            <p>
+              A AutoLux é uma marca fictícia criada para este projeto de demonstração. Representa a visão de um stand de automóveis premium onde a excelência, a transparência e a experiência do cliente estão no centro de tudo.
+            </p>
+            <p>
+              Neste website encontrará um catálogo interativo, filtros funcionais, sistema de favoritos e um design cuidadosamente pensado para transmitir exclusividade e confiança — tudo com código acessível a quem está a aprender desenvolvimento web.
+            </p>
+            <div class="about-values">
+              <span class="about-value">Elegância</span>
+              <span class="about-value">Transparência</span>
+              <span class="about-value">Qualidade</span>
+              <span class="about-value">Inovação</span>
+            </div>
+            <a href="#automoveis" class="btn btn-primary">Explorar a seleção</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TESTEMUNHOS ========== -->
+    <section class="testimonials section">
+      <div class="container">
+        <h2 class="section-title reveal">Experiência do cliente</h2>
+        <p class="section-subtitle reveal">
+          Testemunhos fictícios criados apenas para demonstrar a secção. Não representam clientes reais.
+        </p>
+        <div class="testimonials-grid">
+          <article class="testimonial-card reveal">
+            <div class="testimonial-stars" aria-label="5 estrelas">★★★★★</div>
+            <p class="testimonial-text">“A atenção aos detalhes e a forma como me orientaram na escolha foram excepcionais. Uma experiência verdadeiramente premium.”</p>
+            <p class="testimonial-author">Ana Rodrigues</p>
+            <p class="testimonial-role">Cliente demonstrativo</p>
+          </article>
+          <article class="testimonial-card reveal">
+            <div class="testimonial-stars" aria-label="5 estrelas">★★★★★</div>
+            <p class="testimonial-text">“Do primeiro contacto até à entrega, tudo correu de forma fluida e profissional. Recomendo a abordagem AutoLux.”</p>
+            <p class="testimonial-author">Miguel Ferreira</p>
+            <p class="testimonial-role">Cliente demonstrativo</p>
+          </article>
+          <article class="testimonial-card reveal">
+            <div class="testimonial-stars" aria-label="5 estrelas">★★★★★</div>
+            <p class="testimonial-text">“O design do website e a clareza das informações fizeram toda a diferença. Senti-me confiante em cada passo.”</p>
+            <p class="testimonial-author">Sofia Costa</p>
+            <p class="testimonial-role">Cliente demonstrativo</p>
+          </article>
+        </div>
+        <p class="demo-note">Estes testemunhos são exemplos fictícios para fins de demonstração do projeto.</p>
+      </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section class="faq section" id="faq">
+      <div class="container">
+        <h2 class="section-title reveal">Perguntas frequentes</h2>
+        <p class="section-subtitle reveal">
+          Respostas ilustrativas. A disponibilidade e os dados apresentados são exclusivamente demonstrativos.
+        </p>
+        <div class="faq-list">
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              Como posso obter mais informações sobre um automóvel?
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Clique em “Ver detalhes” no cartão do automóvel para abrir a janela com todas as informações. Pode também utilizar o formulário de contacto para demonstrar interesse. Nesta versão de demonstração não existe envio real de mensagens.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              Posso agendar uma visita?
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Num cenário real, sim. Neste projeto o agendamento é apenas ilustrativo. Utilize o formulário de contacto para simular o pedido.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              Como funciona a avaliação de uma retoma?
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                A avaliação de retomas é apresentada como exemplo de serviço. Não existe processo real de avaliação neste website de demonstração.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              Os automóveis apresentados estão disponíveis para compra?
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Não. Todos os automóveis, preços, quilometragens e características são fictícios e criados apenas para demonstrar as funcionalidades do website.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false">
+              Como posso contactar a equipa?
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Utilize a secção de contactos no final da página. O formulário valida os campos e mostra uma mensagem de sucesso, mas não envia dados para nenhum servidor.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACTOS ========== -->
+    <section class="contact section" id="contactos">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <h2 class="section-title">Contacte-nos</h2>
+            <p>
+              Tem interesse em algum dos automóveis ou pretende mais informações? Preencha o formulário. Lembre-se: esta é uma demonstração — as mensagens não são enviadas para nenhuma equipa real.
+            </p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <strong>Email (demonstrativo)</strong>
+                info@autolux-demo.pt
+              </div>
+              <div class="contact-item">
+                <strong>Telefone (demonstrativo)</strong>
+                +351 900 000 000
+              </div>
+              <div class="contact-item">
+                <strong>Morada (demonstrativa)</strong>
+                Lisboa, Portugal
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal">
+            <form class="form" id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name">Nome *</label>
+                <input type="text" id="contact-name" name="name" required autocomplete="name">
+                <p class="form-error">Por favor, introduza o seu nome.</p>
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Email *</label>
+                <input type="email" id="contact-email" name="email" required autocomplete="email">
+                <p class="form-error">Introduza um email válido.</p>
+              </div>
+              <div class="form-group">
+                <label for="contact-subject">Assunto</label>
+                <input type="text" id="contact-subject" name="subject">
+              </div>
+              <div class="form-group">
+                <label for="contact-car">Automóvel de interesse</label>
+                <select id="contact-car" name="car">
+                  <option value="">Nenhum em particular</option>
+                  <option value="Aurora GT">Aurora GT</option>
+                  <option value="Vespera Coupé">Vespera Coupé</option>
+                  <option value="Atlas Elite">Atlas Elite</option>
+                  <option value="Sovereign L">Sovereign L</option>
+                  <option value="Voltara EV">Voltara EV</option>
+                  <option value="Thunder RS">Thunder RS</option>
+                  <option value="Solara Cabrio">Solara Cabrio</option>
+                  <option value="Executive X">Executive X</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="contact-message">Mensagem *</label>
+                <textarea id="contact-message" name="message" required></textarea>
+                <p class="form-error">Por favor, escreva a sua mensagem.</p>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width:100%;">Enviar mensagem</button>
+            </form>
+
+            <div class="form-success" id="form-success">
+              <h3>Mensagem registada (demonstração)</h3>
+              <p>
+                Os dados foram validados com sucesso no navegador. Como não existe backend, a mensagem não foi enviada para nenhum servidor nem recebida por ninguém.
+              </p>
+              <button class="btn btn-secondary" id="form-reset" type="button">Enviar outra mensagem</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#inicio" class="logo">
+            <span class="logo-icon" aria-hidden="true"></span>
+            AutoLux
+          </a>
+          <p>Website demonstrativo de automóveis premium. Design moderno, interações reais e código pensado para quem está a aprender.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#automoveis">Automóveis</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#sobre">Sobre Nós</a></li>
+            <li><a href="#contactos">Contactos</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Secções</h4>
+          <ul>
+            <li><a href="#automoveis">Catálogo</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contactos">Formulário</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contactos (demo)</h4>
+          <ul>
+            <li>info@autolux-demo.pt</li>
+            <li>+351 900 000 000</li>
+            <li>Lisboa, Portugal</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2026</span> AutoLux. Projeto de demonstração.</p>
+        <p class="footer-disclaimer">Todos os automóveis, preços, contactos e testemunhos são fictícios e servem apenas para ilustrar o funcionamento do website.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== MODAL ========== -->
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal">
+      <button class="modal-close" id="modal-close" aria-label="Fechar detalhes" type="button">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div id="modal-content">
+        <!-- Preenchido por JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/cars.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
